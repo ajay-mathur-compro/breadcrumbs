@@ -1,5 +1,5 @@
 <template>
-  <h2>Upcoming Friends</h2>
+  <h2>Upcoming Events</h2>
   <p>These events are coming up soon...</p>
   <ul>
     <li><NuxtLink to="events/dance">Dance</NuxtLink></li>

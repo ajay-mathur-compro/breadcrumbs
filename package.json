@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "dependencies": {
+  "devDependencies": {
     "@pinia/nuxt": "^0.10.1",
     "nuxt": "^3.16.1",
     "pinia": "^3.0.1",
