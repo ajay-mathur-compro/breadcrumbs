@@ -2,7 +2,7 @@
 
 export default defineNuxtRouteMiddleware((to, from) => {
   // Access the breadcrumb store using a custom composable.
-  const breadcrumbStore = useBreadcrumbStore();
+  const breadcrumbStore = BreadcrumbStore();
 
   if (to.path === from.path) {
     breadcrumbStore.resetBreadcrumbs();

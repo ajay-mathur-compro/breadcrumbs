@@ -5,7 +5,7 @@ export interface Breadcrumb {
 }
 
 // Define a Pinia store for managing breadcrumbs
-export const useBreadcrumbStore = defineStore("breadcrumb", {
+export const BreadcrumbStore = defineStore("breadcrumb", {
   // State of the store
   state: () => ({
     breadcrumbs: [] as Breadcrumb[], // Array to hold breadcrumb objects

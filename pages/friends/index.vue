@@ -4,8 +4,8 @@
   <ul>
     <li><NuxtLink to="friends/alice">Alice</NuxtLink></li>
     <li><NuxtLink to="friends/frank">Frank</NuxtLink></li>
-    <li><NuxtLink to="friends/alice">Jane</NuxtLink></li>
-    <li><NuxtLink to="friends/alice">Matt</NuxtLink></li>
+    <li><NuxtLink to="friends/jane">Jane</NuxtLink></li>
+    <li><NuxtLink to="friends/matt">Matt</NuxtLink></li>
   </ul>
 </template>
 

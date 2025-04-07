@@ -17,10 +17,8 @@
 
 <script setup lang="ts">
 /*
- * Initialize the breadcrumb store and extract the breadcrumbs array
- * using storeToRefs for reactivity.
+ * Use the composable to access breadcrumb data reactively.
  */
-const breadcrumbStore = useBreadcrumbStore();
-const { breadcrumbs } = storeToRefs(breadcrumbStore);
+const { breadcrumbs } = useBreadcrumb()
 </script>
 
