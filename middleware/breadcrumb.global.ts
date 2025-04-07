@@ -1,7 +1,7 @@
 // Global Nuxt route middleware for managing breadcrumbs.
 
 export default defineNuxtRouteMiddleware((to, from) => {
-  // Access the breadcrumb store using a custom composable.
+  // Access the breadcrumb store
   const breadcrumbStore = BreadcrumbStore();
 
   if (to.path === from.path) {
@@ -16,10 +16,10 @@ export default defineNuxtRouteMiddleware((to, from) => {
       const matchedRoute = useRouter().resolve(accumulatedPath);
       const breadcrumbText = matchedRoute?.meta?.title || segment;
       // Add the breadcrumb to the breadcrumb store.
-        breadcrumbStore.addBreadcrumb({
-          text: String(breadcrumbText),
-          url: accumulatedPath,
-        });
+      breadcrumbStore.addBreadcrumb({
+        text: String(breadcrumbText),
+        url: accumulatedPath,
+      });
     });
   } else {
     // Retrieve the breadcrumb text from the route's metadata.
