@@ -15,14 +15,11 @@ export default defineNuxtRouteMiddleware((to, from) => {
       accumulatedPath += `/${segment}`; // Build the path incrementally.
       const matchedRoute = useRouter().resolve(accumulatedPath);
       const breadcrumbText = matchedRoute?.meta?.title || segment;
-
-      // Add the breadcrumb only if it doesn't already exist.
-      if (!breadcrumbStore.breadcrumbs.some((b) => b.url === accumulatedPath)) {
+      // Add the breadcrumb to the breadcrumb store.
         breadcrumbStore.addBreadcrumb({
           text: String(breadcrumbText),
           url: accumulatedPath,
         });
-      }
     });
   } else {
     // Retrieve the breadcrumb text from the route's metadata.
