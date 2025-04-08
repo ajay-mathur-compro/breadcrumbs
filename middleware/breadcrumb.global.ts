@@ -33,5 +33,10 @@ export default defineNuxtRouteMiddleware((to, from) => {
         url: to.path, // Use the current route path as the breadcrumb URL.
       });
     }
+    // If the user is navigating to the root path ("/"),
+    // reset the breadcrumbs in the breadcrumb store.
+    if(to.path === "/"){
+      breadcrumbStore.resetBreadcrumbs();
+    }
   }
 });
