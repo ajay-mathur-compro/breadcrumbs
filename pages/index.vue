@@ -4,14 +4,8 @@
     <p>Use the links below to navigate the site.</p>
   </div>
   <ul>
-    <li><NuxtLink to="friends" class="custom-link">Friends</NuxtLink></li>
-    <li><NuxtLink to="events" class="custom-link">Events</NuxtLink></li>
-    <li><NuxtLink to="locations" class="custom-link">Locations</NuxtLink></li>
-    <li>
-      <NuxtLink to="friendsTemp" class="custom-link"
-        >Friends Temporary</NuxtLink
-      >
-    </li>
+    <li><NuxtLink to="home" class="custom-link">Home</NuxtLink></li>
+    <li><NuxtLink to="about" class="custom-link">About</NuxtLink></li>
   </ul>
 </template>
 
