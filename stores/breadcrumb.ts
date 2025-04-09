@@ -1,3 +1,4 @@
+import { defineStore } from "pinia";
 // Define the structure of a breadcrumb object
 export interface Breadcrumb {
   text: string; // The display text for the breadcrumb

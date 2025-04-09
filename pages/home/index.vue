@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <h1>Breadcrumbs Demo</h1>
     <p>Use the links below to navigate the site.</p>
   </div>
@@ -13,6 +13,8 @@
       >
     </li>
   </ul>
+  <h3>Navigate to the Entry Page</h3>
+    <nuxt-link to="/">Entry Page</nuxt-link>
 </template>
 
 <script setup>

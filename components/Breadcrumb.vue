@@ -1,10 +1,10 @@
 <template>
   <!-- Breadcrumb navigation bar, displayed only if there are breadcrumbs -->
-  <nav aria-label="breadcrumb" v-if="breadcrumbs.length" >
+  <nav aria-label="breadcrumb" v-if="breadcrumbs.length">
     <!-- Loop through the breadcrumbs array to display each breadcrumb -->
     <span v-for="(breadcrumb, index) in breadcrumbs" :key="index">
       <!-- Display a separator (>) between breadcrumbs -->
-      
+
       <!-- Display the last breadcrumb as plain text -->
       <span v-if="index === breadcrumbs.length - 1">{{ breadcrumb.text }}</span>
       <!-- Display other breadcrumbs as links -->
@@ -17,8 +17,8 @@
 
 <script setup lang="ts">
 /*
- * Use the composable to access breadcrumb data reactively.
+ * Access breadcrumb data reactively from the store.
  */
-const { breadcrumbs } = useBreadcrumb()
+  const store = BreadcrumbStore();
+  const { breadcrumbs } = storeToRefs(store);
 </script>
-

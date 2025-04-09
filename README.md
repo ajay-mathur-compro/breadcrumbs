@@ -86,10 +86,32 @@ bun run preview
 ├── middleware/
 │   └── breadcrumb.global.ts # Global middleware for managing breadcrumbs
 ├── pages/
-│   ├── index.vue            # Home page
-│   ├── friends.vue          # Friends page
-│   ├── events.vue           # Events page
-│   └── locations.vue        # Locations page
+│   ├── about/
+│   │   └── index.vue
+│   ├── home/
+│   │   ├── events/
+│   │   │   ├── cookout.vue
+│   │   │   ├── dance.vue
+│   │   │   └── index.vue
+│   │   ├── friends/
+│   │   │   ├── bestFriends/
+│   │   │   │   ├── index.vue
+│   │   │   │   └── tom.vue
+│   │   │   ├── alice.vue
+│   │   │   ├── frank.vue
+│   │   │   ├── index.vue
+│   │   │   ├── jane.vue
+│   │   │   ├── matt.vue
+│   │   │── friendsTemp/
+│   │   │   └── index.vue
+│   │   ├── locations/
+│   │   │   ├── china.vue
+│   │   │   ├── index.vue
+│   │   │   └── mexico.vue
+│   │   └── index.vue
+│   └── index.vue
+├── plugins/
+│   └── breadcrumb.ts         # Plugin for managing breadcrumbs
 ├── stores/
 │   └── breadcrumb.ts        # Pinia store for managing breadcrumb state
 ├── README.md                # Project documentation

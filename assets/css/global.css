@@ -41,8 +41,3 @@ p {
   margin-bottom: 16px;
 }
 
-/* Add a global container style for consistent layout */
-.container {
-  max-width: 1200px;
-  padding: 0 10px; /* Add padding for smaller screens */
-}
