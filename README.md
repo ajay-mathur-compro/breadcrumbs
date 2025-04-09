@@ -83,6 +83,7 @@ bun run preview
 ```
 ├── components/
 │   └── Breadcrumb.vue       # Breadcrumb component
+│   ├── EntryPage.vue
 ├── middleware/
 │   └── breadcrumb.global.ts # Global middleware for managing breadcrumbs
 ├── pages/
@@ -110,8 +111,6 @@ bun run preview
 │   │   │   └── mexico.vue
 │   │   └── index.vue
 │   └── index.vue
-├── plugins/
-│   └── breadcrumb.ts         # Plugin for managing breadcrumbs
 ├── stores/
 │   └── breadcrumb.ts        # Pinia store for managing breadcrumb state
 ├── README.md                # Project documentation
