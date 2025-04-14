@@ -1,5 +1,6 @@
 <template>
-    <Alice />
+    <h3>Alice</h3>
+    <p>More information about Alice...</p>
 </template>
 
 <script setup>
