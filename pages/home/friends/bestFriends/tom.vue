@@ -1,6 +1,6 @@
 <template>
-    <h3>Tom</h3>
-    <p>More information about Tom...</p>
+    <h3 class="m-5">Tom</h3>
+    <p class="text-base leading-relaxed text-gray-600 m-5">More information about Tom...</p>
 </template>
 
 <script setup>

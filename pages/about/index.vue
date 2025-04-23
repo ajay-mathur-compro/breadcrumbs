@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <h1>About</h1>
-        <p>This is the about page.</p>
-    </div>
-    <EntryPage />
+  <div class="flex flex-col bg-gray-100">
+    <h1 class="font-sans text-gray-800 m-5">About Page</h1>
+  </div>
+
+  <EntryPage />
 </template>
 
 <script setup>
